@@ -1,0 +1,38 @@
+#include <stdio.h>
+
+int main() {
+    char disciplina[50];
+    char turma[20];
+    char nomeCompleto[100];
+    int matricula;
+    float altura;
+    float massaCorporal;
+
+    printf("Algoritimo e Programação estruturada");
+    fgets(disciplina, sizeof(disciplina), stdin);
+
+    printf("GPE17N20241");
+    fgets(turma, sizeof(turma), stdin);
+
+    printf("Priscilla Eduarda Gomes Belem");
+    fgets(nomeCompleto, sizeof(nomeCompleto), stdin);
+
+    printf("UC25200948");
+    scanf("%d", &matricula);
+
+    printf("1,62 m");
+    scanf("%f", &altura);
+
+    printf("58,00 kg");
+    scanf("%f", &massaCorporal);
+
+    printf("\n--- Dados do Aluno ---\n");
+    printf("Disciplina: %s", disciplina);
+    printf("Turma: %s", turma);
+    printf("Nome Completo: %s", nomeCompleto);
+    printf("Matrícula: %d\n", matricula);
+    printf("Altura: %.2f m\n", altura);
+    printf("Massa Corporal: %.2f kg\n", massaCorporal);
+
+    return 0;
+}
